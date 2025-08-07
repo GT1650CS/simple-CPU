@@ -1,0 +1,28 @@
+Here is a simple test program, written in hexadecimal. 
+10 0A
+28 00 10
+11 0A
+29 01 10
+24 00 10
+2E
+24 01 10
+2C
+24 00 10
+0C
+28 00 10
+21 00 00
+23 06 00
+FF
+
+It should output the following:
+Loaded 32 bytes
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
