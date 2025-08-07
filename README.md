@@ -1,6 +1,6 @@
 ## About
 
-This is a minimal virtual CPU written in C. It includes:
+This is a simple virtual CPU written in C. It includes:
 
 - A custom instruction set
 - General-purpose registers (A, B, C, D)
