@@ -1,18 +1,18 @@
 Here is a simple test program, written in hexadecimal. 
-10 0A
-28 00 10
-11 0A
-29 01 10
-24 00 10
-2E
-24 01 10
-2C
-24 00 10
-0C
-28 00 10
-21 00 00
-23 06 00
-FF
+10 0A      MOV A, 10
+28 00 10   STORE A, [0x1000]
+11 0A      MOV B, 10
+29 01 10   STORE B, [0x1001]
+24 00 10   LOAD A, [0x1000]
+2E         PRINT_DECIMAL A
+24 01 10   LOAD A, [0x1001]
+2C         PRINT_ASCII A
+24 00 10   LOAD A, [0x1000]
+0C         DEC A
+28 00 10   STORE A, [0x1000]
+21 00 00   CMP A, 0
+23 06 00   JNZ 0x0006
+FF         HALT
 
 It should output the following:
 Loaded 32 bytes
