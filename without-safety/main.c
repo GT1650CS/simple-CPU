@@ -225,6 +225,8 @@ int main(int argc, char **argv) {
             case 0x21: { // CMP A, IMM16
                 if (cpu.A == (rom[cpu.PC + 1] | (rom[cpu.PC + 2] << 8))) {
                     cpu.Z = true;
+                } else {
+                    cpu.Z = false; // patched
                 }
                 instr_len = 3;
                 break;
