@@ -412,11 +412,11 @@ int main(int argc, char** argv) {
             break;
         }
         case 0xFF: { // HALT
-            return 0;
+            return EXIT_SUCCESS;
         }
         default: {
             printf("Unknown opcode: 0x%02X at PC=%zu\n", opcode, cpu.PC);
-            return 1;
+            return EXIT_FAILURE;
         }
         } // switch end
 
